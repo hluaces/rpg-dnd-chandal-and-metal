@@ -1,0 +1,27 @@
+---
+layout: layouts/page.njk
+title: Presos de Everlund
+breadcrumbs:
+  - label: Inicio
+    url: /
+  - label: Personajes
+    url: /personajes/
+  - label: Presos de Everlund
+    url: /personajes/presos/
+pagination:
+  data: collections.presos
+  size: 100
+  alias: lista
+---
+
+<p class="section-note">Prisioneros vinculados por la Orden del Martillo Carmesí. Enlaces a sus informes in‑universe.</p>
+
+<ul class="card-list">
+  {%- for preso in lista | reverse -%}
+  <li class="card">
+    <h3><a href="{{ preso.url }}">{{ preso.data.title }}</a></h3>
+    {% if preso.data.expediente %}<p class="tag">Expediente {{ preso.data.expediente }}</p>{% endif %}
+    {% if preso.data.resumen %}<p>{{ preso.data.resumen }}</p>{% endif %}
+  </li>
+  {%- endfor -%}
+</ul>

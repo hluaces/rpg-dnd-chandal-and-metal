@@ -13,7 +13,7 @@ breadcrumbs:
 
 ## Secciones
 
-- [Personajes conocidos](/personajes/)
+- [Personajes](/personajes/)
 - [Mapas](/mapas/)
 - [Sesiones](/sesiones/)
-- [Recursos](/recursos/)
+- [Reglas y ayudas](/reglas/)
