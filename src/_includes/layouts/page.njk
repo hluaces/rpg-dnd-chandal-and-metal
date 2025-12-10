@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+<article class="scroll">
+  {% if breadcrumbs %}
+    <div class="breadcrumbs">
+      {% for crumb in breadcrumbs %}
+        {% if not loop.last %}
+          <a href="{{ crumb.url }}">{{ crumb.label }}</a> ·
+        {% else %}
+          {{ crumb.label }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</article>
