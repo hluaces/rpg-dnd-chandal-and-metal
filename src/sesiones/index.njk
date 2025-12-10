@@ -1,0 +1,23 @@
+---
+layout: layouts/page.njk
+title: Sesiones
+breadcrumbs:
+  - label: Inicio
+    url: /
+  - label: Sesiones
+    url: /sesiones/
+pagination:
+  data: collections.sesiones
+  size: 100
+  alias: lista
+---
+
+<ul class="card-list">
+  {%- for sesion in lista | reverse -%}
+  <li class="card">
+    <h3><a href="{{ sesion.url }}">{{ sesion.data.title }}</a></h3>
+    {% if sesion.data.resumen %}<p class="muted">{{ sesion.data.resumen }}</p>{% endif %}
+    {% if sesion.date %}<p class="meta">Actualizado: {{ sesion.date | isoDate }}</p>{% endif %}
+  </li>
+  {%- endfor -%}
+</ul>

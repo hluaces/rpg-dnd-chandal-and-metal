@@ -1,0 +1,27 @@
+{% set current = page.url or "/" %}
+<nav class="nav">
+  <div class="nav__brand">
+    <a href="{{ site.baseUrl }}">Crónica</a>
+  </div>
+  <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <div class="nav__links">
+    {% for item in nav %}
+      {% set active = current and (current.indexOf(item.url) === 0) %}
+      <a href="{{ item.url }}" class="{% if active %}active{% endif %}">{{ item.label }}</a>
+    {% endfor %}
+  </div>
+</nav>
+<script>
+  // Nav toggle para móvil
+  (function() {
+    const nav = document.currentScript.previousElementSibling;
+    if (!nav) return;
+    const btn = nav.querySelector('.nav__toggle');
+    const links = nav.querySelector('.nav__links');
+    if (!btn || !links) return;
+    btn.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
