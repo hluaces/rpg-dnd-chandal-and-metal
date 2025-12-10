@@ -1,27 +1,46 @@
 {% set current = page.url or "/" %}
+<div class="nav__overlay"></div>
 <nav class="nav">
-  <div class="nav__brand">
-    <a href="{{ site.baseUrl }}">Crónica</a>
-  </div>
   <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
   <div class="nav__links">
     {% for item in nav %}
-      {% set active = current and (current.indexOf(item.url) === 0) %}
+      {% set active = (item.url == "/" and current == "/") or (item.url != "/" and item.url in current) %}
       <a href="{{ item.url }}" class="{% if active %}active{% endif %}">{{ item.label }}</a>
     {% endfor %}
   </div>
 </nav>
 <script>
-  // Nav toggle para móvil
+  // Nav toggle para móvil con overlay
   (function() {
     const nav = document.currentScript.previousElementSibling;
-    if (!nav) return;
+    const overlay = document.querySelector('.nav__overlay');
+    if (!nav || !overlay) return;
+
     const btn = nav.querySelector('.nav__toggle');
     const links = nav.querySelector('.nav__links');
     if (!btn || !links) return;
-    btn.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
+
+    function toggleMenu(open) {
+      links.classList.toggle('open', open);
+      overlay.classList.toggle('active', open);
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = !links.classList.contains('open');
+      toggleMenu(isOpen);
+    });
+
+    overlay.addEventListener('click', () => {
+      toggleMenu(false);
+    });
+
+    // Cerrar al hacer clic en un enlace
+    links.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu(false);
+      });
     });
   })();
 </script>

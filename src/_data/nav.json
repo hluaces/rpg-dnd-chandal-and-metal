@@ -1,5 +1,6 @@
 [
   { "key": "home", "label": "Inicio", "url": "/" },
+  { "key": "sesiones", "label": "Sesiones", "url": "/sesiones/" },
   { "key": "mapas", "label": "Mapas", "url": "/mapas/" },
   { "key": "personajes", "label": "Personajes", "url": "/personajes/" },
   { "key": "reglas", "label": "Reglas", "url": "/reglas/" }
