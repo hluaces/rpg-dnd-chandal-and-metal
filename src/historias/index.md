@@ -8,8 +8,8 @@ breadcrumbs:
     url: /historias/
 ---
 
-Descargas disponibles (PDF):
+Historias de los jugadores (en PDF):
 
-- [Glup-Glup](/historias/glup-glup.pdf)
-- [Velyndra & Drazkyn](/historias/velyndra-drazkyn.pdf)
-- [Kael’Vorn](/historias/kaelvorn.pdf)
+- [{% pj "glup-glup" %}Glup-Glup{% endpj %}](/historias/glup-glup.pdf)
+- [{% pj "velyndra" %}Velyndra{% endpj %} & {% pj "drazkyn" %}Drazkyn{% endpj %}](/historias/velyndra-drazkyn.pdf)
+- [{% pj "kaelvorn" %}Kael'Vorn{% endpj %}](/historias/kaelvorn.pdf)

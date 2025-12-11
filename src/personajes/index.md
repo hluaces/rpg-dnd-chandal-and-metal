@@ -10,6 +10,6 @@ breadcrumbs:
 
 Selecciona una ficha:
 
-- **[Jugadores](/personajes/jugadores/)** – Breve referencia y enlaces a las historias en PDF.
-- **[Dramatis personae](/personajes/dramatis-personae/)** – PNJ, facciones y referencias conocidas por los PJ.
-- **[Presos de Everlund](/personajes/presos/)** – Lista de presos vinculados y sus informes.
+- **[Jugadores](/personajes/jugadores/)** – Las nobles historias de los jugadores que participan en la crónica.
+- **[Dramatis personae](/personajes/dramatis-personae/)** – Referencia de todos los PNJs y facciones que los jugadores han conocido durante la crónica.
+- **[Presos de Everlund](/personajes/presos/)** – Informes confidenciales de la Orden del Martillo carmesí sobre los presos que mantienen en la prisión de Everlund.

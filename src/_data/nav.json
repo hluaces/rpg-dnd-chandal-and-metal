@@ -3,5 +3,6 @@
   { "key": "sesiones", "label": "Sesiones", "url": "/sesiones/" },
   { "key": "mapas", "label": "Mapas", "url": "/mapas/" },
   { "key": "personajes", "label": "Personajes", "url": "/personajes/" },
+  { "key": "coleccionables", "label": "Coleccionables", "url": "/coleccionables/" },
   { "key": "reglas", "label": "Reglas", "url": "/reglas/" }
 ]

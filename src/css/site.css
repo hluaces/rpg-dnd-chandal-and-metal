@@ -19,7 +19,14 @@
   --max-width: 900px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 body {
   margin: 0;
@@ -31,12 +38,15 @@ body {
   color: var(--text);
   line-height: 1.75;
   font-size: 1.05rem;
+  overflow-x: hidden;
 }
 
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1rem 1.25rem 2.5rem;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .scroll {
@@ -444,6 +454,7 @@ blockquote {
     z-index: 1000;
     gap: 0.5rem;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .nav__links::before {
@@ -576,4 +587,175 @@ pre {
 pre code {
   background: none;
   padding: 0;
+}
+
+/* ========================================
+   TOOLTIPS DE PERSONAJES (grimorio carmesí)
+   ======================================== */
+
+/* Wrapper del personaje */
+.pj-wrapper {
+  position: relative;
+  display: inline;
+  cursor: help;
+  border-bottom: 1px dotted var(--accent);
+}
+
+/* Nombre del personaje (texto visible) */
+.pj-nombre {
+  color: var(--text);
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.pj-wrapper:hover .pj-nombre {
+  color: var(--accent-strong);
+}
+
+/* Tooltip contenedor */
+.pj-tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Estilo grimorio carmesí */
+  background:
+    linear-gradient(to bottom, var(--paper), var(--paper-dark)),
+    repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(0,0,0,.015) 1px, rgba(0,0,0,.015) 2px);
+  border: 2px solid var(--accent-strong);
+  border-image: linear-gradient(135deg, var(--gold-dim), var(--accent-strong), var(--gold-dim)) 1;
+  box-shadow: var(--shadow-paper);
+
+  padding: 0.85rem 1rem;
+  border-radius: 4px;
+  width: max-content;
+  max-width: 280px;
+
+  /* Visibilidad */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+
+  /* Tipografía */
+  font-family: "Crimson Text", serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text);
+}
+
+/* Flecha del tooltip (apunta hacia abajo) */
+.pj-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: var(--accent-strong);
+}
+
+.pj-tooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--paper);
+  z-index: 1;
+  margin-top: -1px;
+}
+
+/* Mostrar tooltip al hover */
+.pj-wrapper:hover .pj-tooltip,
+.pj-wrapper:focus-within .pj-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+/* Elementos internos del tooltip */
+.pj-tooltip-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gold-dim);
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pj-tooltip-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.pj-tooltip-vinculo {
+  display: block;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
+/* Personaje faltante (fallback) */
+.pj-missing {
+  color: var(--accent);
+  border-bottom: 2px wavy var(--accent);
+  cursor: help;
+}
+
+/* Responsive: tooltip en móvil */
+@media (max-width: 768px) {
+  .pj-tooltip {
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 0.7rem 0.85rem;
+
+    /* En móvil, centrar en pantalla */
+    position: fixed;
+    bottom: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pj-wrapper:hover .pj-tooltip,
+  .pj-wrapper:focus-within .pj-tooltip {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* Flecha oculta en móvil */
+  .pj-tooltip::after,
+  .pj-tooltip::before {
+    display: none;
+  }
+}
+
+/* Accesibilidad: enfoque con teclado */
+.pj-wrapper:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Prevenir overflow del tooltip en bordes */
+.pj-wrapper:first-child .pj-tooltip {
+  left: 0;
+  transform: translateX(0);
+}
+
+.pj-wrapper:last-child .pj-tooltip {
+  left: auto;
+  right: 0;
+  transform: translateX(0);
 }

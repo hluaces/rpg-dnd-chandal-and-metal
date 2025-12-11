@@ -1,20 +1,13 @@
 ---
 layout: layouts/page.njk
-title: Presos de Everlund
-breadcrumbs:
-  - label: Inicio
-    url: /
-  - label: Personajes
-    url: /personajes/
-  - label: Presos de Everlund
-    url: /personajes/presos/
+title: Informes de presos
 pagination:
   data: collections.presos
   size: 100
   alias: lista
 ---
 
-<p class="section-note">Prisioneros vinculados por la Orden del Martillo Carmesí. Enlaces a sus informes in‑universe.</p>
+<p class="section-note">Documentación de la Orden del Martillo Carmesí sobre los presos que mantienen encerrados en Everlund.</p>
 
 <ul class="card-list">
   {%- for preso in lista | reverse -%}

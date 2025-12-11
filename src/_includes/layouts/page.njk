@@ -2,14 +2,18 @@
 layout: layouts/base.njk
 ---
 <article class="scroll">
-  {% if breadcrumbs %}
+  {% set crumbs = breadcrumbs or (page | autoBreadcrumbs) %}
+  {% if crumbs.length > 0 %}
     <div class="breadcrumbs">
-      {% for crumb in breadcrumbs %}
-        {% if not loop.last %}
-          <a href="{{ crumb.url }}">{{ crumb.label }}</a> ·
+      {% for crumb in crumbs %}
+        {% if crumb.url and not loop.last %}
+          <a href="{{ crumb.url }}">{{ crumb.label }}</a>
+        {% elif loop.last %}
+          {{ title }}
         {% else %}
           {{ crumb.label }}
         {% endif %}
+        {% if not loop.last %} · {% endif %}
       {% endfor %}
     </div>
   {% endif %}

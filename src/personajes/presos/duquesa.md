@@ -4,13 +4,6 @@ title: 'La Duquesa (E-PR-014)'
 tags: ["presos"]
 expediente: E-PR-014
 resumen: Informe de valoración y control de amenaza. Reactivada por hemalurgia; utilidad como agente infiltrador.
-breadcrumbs:
-  - label: Inicio
-    url: /
-  - label: Informes de presos
-    url: /presos/
-  - label: La Duquesa
-    url: /presos/duquesa/
 ---
 
 <div class="doc-classified">
@@ -30,7 +23,7 @@ breadcrumbs:
 
   <div class="doc-meta">
     <div class="meta-row">
-      <span class="meta-label">Clasificado por:</span> Primer Inquisidor Brel • Orden del Martillo Carmesí
+      <span class="meta-label">Clasificado por:</span> Primer Inquisidor {% pj "brel" %}Brel{% endpj %} • Orden del Martillo Carmesí
     </div>
     <div class="meta-row">
       <span class="meta-label">Fecha de sellado:</span> 12 de Uktar, 1484 CdD
@@ -49,7 +42,7 @@ breadcrumbs:
       <p><span class="label">Sexo:</span> Femenino</p>
       <p><span class="label">Origen:</span> <span class="redacted">█████████████</span> (ver incidente D-1342)</p>
       <p><span class="label">Estatus social:</span> <span class="redacted">█████████</span>; identidad y cargo oficiales borrados</p>
-      <p><span class="label">Religión:</span> Antigua devota de Tempus, ahora mezclada con <span class="redacted">███████</span> de <span class="redacted">██████</span></p>
+      <p><span class="label">Religión:</span> Antigua devota de {% pj "tempus" %}Tempus {% endpj %}, ahora mezclada con <span class="redacted">███████</span> de <span class="redacted">██████</span></p>
       <p><span class="label">Estado actual:</span> Reactivada recientemente mediante hemalurgia</p>
       <p><span class="label">Nivel de amenaza:</span> <span class="threat-text">CRÍTICO</span> (mantener bajo contención vigilada en todo momento)</p>
       <p><span class="label">Utilidad prevista:</span> Operativo infiltrador de última respuesta</p>
@@ -74,14 +67,15 @@ Debido a la naturaleza de su creación (y a su estatus como <span class="redacte
     ADVERTENCIA ARCANA
     <span class="warning-symbol">⟁</span>
   </div>
-  <p class="warning-text">Las siguientes capacidades han sido verificadas mediante observación directa. Todo personal en contacto con el sujeto debe portar amuletos de protección mental bendecidos por un clérigo de Helm de nivel 7 o superior.</p>
+  <p class="warning-text">Las siguientes capacidades han sido verificadas mediante observación directa. Todo personal en contacto con el sujeto debe portar amuletos antimaleficio sancionados por nuestros arcanistas.</p>
 </div>
 
 ### Aptitudes
 
 - **Presencia hipnótica:** voz y mirada capaces de desarmar la voluntad de la mayoría de mortales, similar en efecto a un vampiro (N.d.E.: comparar con <span class="redacted">███████████</span> y ver si sus poderes tienen las mismas limitaciones).
-- **Conocimiento profundo:** de inquisiciones pasadas, arcanismo, religión (especialmente ritos de Tempus) y métodos para lidiar con ellos.
-- **Resiliencia sobrenatural:** difícil de destruir de forma definitiva debido a que está formada de <span class="redacted">████████████</span>. Débil a la plata, al envenenamiento y al fuego.
+- **Forma <span class="redacted">███████</span>**: la criatura tiene un total control sobre <span class="redacted">██ █████ █████</span> y puede modificarla para convertirla, total o parcialmente, en <span class="redacted">███████ ██ ████████ █████ ██ ████████</span>. Hasta ahora se han catalogado <span class="redacted">███████</span>, <span class="redacted">█████████</span>, <span class="redacted">███████</span> y <span class="redacted">███████████████</span>. Adicionalmente, es capaz de moldear <span class="redacted">███████ ██ ████████████████ ████████ ████████ █████ ██ ████████</span>.
+- **Conocimiento profundo:** de inquisiciones pasadas, arcanismo, religión (especialmente ritos de {% pj "tempus" %}Tempus {% endpj %}) y métodos para lidiar con ellos. Se asume que su estatus de  <span class="redacted">███████████</span> le confirió tal conocimiento.
+- **Resiliencia sobrenatural:** difícil de destruir de forma definitiva debido a que está formada de <span class="redacted">████████████</span>. Débil a la plata, al envenenamiento y al fuego. Sospechamos que destruir <span class="redacted">████████████</span> sus <span class="redacted">██████</span> podría terminar finalmente con la entidad.
 
 <div class="warning-box warning-danger">
   <div class="warning-header">
@@ -89,7 +83,7 @@ Debido a la naturaleza de su creación (y a su estatus como <span class="redacte
     PROTOCOLOS DE CONTENCIÓN OBLIGATORIOS
     <span class="warning-symbol">☠</span>
   </div>
-  <p class="warning-text">PROHIBIDO el contacto directo sin autorización de rango Capitán o superior. Violación de este protocolo se considera traición y será castigada con ejecución sumaria.</p>
+  <p class="warning-text">PROHIBIDO el contacto directo y la conversación directa no sancionada. La violación de este protocolo se considera traición y será castigada con ejecución sumaria.</p>
 </div>
 
 ### Riesgos y control
@@ -102,7 +96,7 @@ Debido a la naturaleza de su creación (y a su estatus como <span class="redacte
 
 <div class="recommendation-box">
   <p>Solo considerar su "liberación dirigida" en operaciones donde la alternativa sea <strong>perderlo todo</strong> y hacerlo bajo la supervisión de un coro de arcanistas, caballeros ungidos y bajo el auspicio de, al menos, un gran eclesiarca.</p>
-  <p class="recommendation-warning">Cualquier uso no autorizado será considerado herejía contra Tempus y alta traición contra la Orden.</p>
+  <p class="recommendation-warning">Cualquier uso no autorizado será considerado herejía contra {% pj "tempus" %}Tempus {% endpj %} y alta traición contra la Orden.</p>
 </div>
 
 <div class="doc-footer">

@@ -8,6 +8,10 @@ breadcrumbs:
     url: /mapas/
 ---
 
+La acción de la crónica se desenvuelve en los <i>Reinos Olvidados</i>, concretamente durante la guerra de las marcas de plata (1479–1480 DR).
+
+Los mapas siguientes sirven como medio para que los jugadores se orienten en el mundo de los Reinos. La acción de la crónica comienza en la ciudad de Everlund, una vez los orcos de Muchas-Flechas destruyen y conquistan la ciudad de Sundabar.
+
 ## Marcas de Plata – Mapa geográfico
 
 <figure>

@@ -1,0 +1,180 @@
+{
+  "brel": {
+    "nombre": "Brel Martillo de Bronce",
+    "raza": "Enano",
+    "rol": "Secretario del Primado",
+    "faccion": "Orden del Martillo Carmesí",
+    "descripcion": "Burócrata de la Orden Carmesí convenció al capitán Erlen de que no apresara a Drazkyn y Valyndra. Firmó el Vínculo Carmesí por todos los presos usando la autoridad vertida sobre él.",
+    "estatus": "aliado",
+    "vinculo": "Firmó el contrato carmesí por todos los prisioneros"
+  },
+  "rakrit": {
+    "nombre": "Rakrit Dul",
+    "raza": "Humano (niño)",
+    "rol": "Vigía Eminente de Helm",
+    "faccion": "Orden del Martillo Carmesí",
+    "descripcion": "Niño santo de Helm que dirige el ritual del Vínculo Carmesí. Marcó a todos los prisioneros con una extraña marca mágica. Se le atribuyen poderes milagrosos.",
+    "estatus": "neutral",
+    "vinculo": "Ejecutó el ritual que marcó a los prisioneros"
+  },
+  "haldo": {
+    "nombre": "Haldo Redmarch",
+    "raza": "Halfling",
+    "rol": "Mariscal Primado",
+    "faccion": "Orden del Martillo Carmesí",
+    "descripcion": "Máxima autoridad de una orden militante y extremista de Tempus. Se le concedieron poderes máximos sobre Everlund con el fin de defenderla de los orcos. Reclutó forzadamente a los presos mediante el Vínculo Carmesí.",
+    "estatus": "autoridad"
+  },
+  "helra": {
+    "nombre": "Helra Vaun",
+    "raza": "Semi-elfa",
+    "rol": "Capellán/Inquisidora de Campo",
+    "faccion": "Orden del Martillo Carmesí",
+    "descripcion": "Capellán e inquisidora de campo de la Orden. Tiene trato directo con Haldo y se encarga de los vinculados y las misiones especiales.",
+    "estatus": "autoridad"
+  },
+  "erlen": {
+    "nombre": "Capitán Erlen Durgaut",
+    "raza": "Humano",
+    "rol": "Capitán de la guardia de Everlund, miembro del consejo",
+    "faccion": "Everlund (Defensores)",
+    "descripcion": "Mando militar de Everlund que solicitó la ayuda de la Orden Carmesí para defender la ciudad. Intentó apresar a Drazkyn y Velyndra cuando estos no lograron convencerle de sus intenciones.",
+    "estatus": "autoridad"
+  },
+  "ralik": {
+    "nombre": "Ralik",
+    "raza": "Humano",
+    "rol": "Guardia raso",
+    "faccion": "Everlund (Defensores)",
+    "descripcion": "Guardia raso de Everlund. Simpatiza con Glup-Glup y le devolvió sus útiles de escritura en prisión.",
+    "estatus": "aliado"
+  },
+  "quenthel": {
+    "nombre": "Quenthel Baenre",
+    "raza": "Drow",
+    "rol": "Suma Matriarca de Lolth",
+    "faccion": "Casa Baenre",
+    "descripcion": "Suma Matriarca de Lolth y líder de la casa dominante de Menzoberranzan. Orquesta la guerra contra las Marcas de Plata.",
+    "estatus": "enemigo"
+  },
+  "ravel": {
+    "nombre": "Ravel Xorlarrin",
+    "raza": "Drow",
+    "rol": "Maestra de armas de la casa Xorlarrin",
+    "faccion": "Casa Xorlarrin",
+    "descripcion": "Drow, maestra de armas. Se encontró a Drazkyn y Velyndra durante el asedio de Everlund.",
+    "estatus": "enemiga"
+  },
+  "zeerith": {
+    "nombre": "Zeerith Xorlarrin",
+    "raza": "Drow",
+    "rol": "Artífice-Matriarca",
+    "faccion": "Casa Xorlarrin",
+    "descripcion": "Artífice-matriarca de la casa de magos, asesinos y artífices. Dirige a su casa en la guerra contra las Marcas de Plata.",
+    "estatus": "enemigo"
+  },
+  "irae": {
+    "nombre": "Irae T'Sarran",
+    "raza": "Drow (fallecida)",
+    "rol": "Antigua Matriarca",
+    "faccion": "Casa T'Sarran",
+    "descripcion": "Antigua matriarca de una casa de espías, diplomáticos y fanáticos religiosos aniquilada en años recientes. Velyndra descubrió su muerte cuando Haldo y Brel se lo comunicaron.",
+    "estatus": "fallecida"
+  },
+  "obould": {
+    "nombre": "Obould XVII",
+    "raza": "Orco (fallecido)",
+    "rol": "Rey del clan Muchas-Flechas",
+    "faccion": "Reino Muchas-Flechas",
+    "descripcion": "Rey del clan Muchas-Flechas asesinado por Hartusk. Trajo un largo período de paz a la raza orca. Su muerte desencadenó la guerra actual.",
+    "estatus": "fallecido"
+  },
+  "hartusk": {
+    "nombre": "Hartusk I",
+    "raza": "Orco",
+    "rol": "Caudillo Usurpador",
+    "faccion": "Reino Muchas-Flechas",
+    "descripcion": "Caudillo que usurpó el poder tras asesinar a Obould XVII. Actual líder de los Muchas-Flechas en la guerra.",
+    "estatus": "enemigo"
+  },
+  "glup-glup": {
+    "nombre": "Glup-Glup",
+    "raza": "Kuo-toa",
+    "rol": "Monje",
+    "faccion": "Personaje Jugador",
+    "descripcion": "Monje kuo-toa devoto del dios del goteo. Encarcelado en Everlund por adorar en la fuente pública de la ciudad. Fue vinculado para ayudar en la defensa de Everlund.",
+    "estatus": "pj"
+  },
+  "drazkyn": {
+    "nombre": "Drazkyn \"Sombrafuria\" Xorlarrin",
+    "raza": "Drow",
+    "rol": "Asesino",
+    "faccion": "Personaje Jugador",
+    "descripcion": "Asesino renegado de Casa Xorlarrin. Huyó de la suboscuridad con Velyndra y fue capturado durante el asedio de Everlund. Fue vinculado para ayudar en la defensa de Everlund.",
+    "estatus": "pj"
+  },
+  "velyndra": {
+    "nombre": "Velyndra T'Sarran",
+    "raza": "Drow",
+    "rol": "Espía",
+    "faccion": "Personaje Jugador",
+    "descripcion": "Espía renegada de Casa T'Sarran. Huyó de la suboscuridad con Drazkyn y fue capturada durante el asedio de Everlund. Fue vinculada para ayudar en la defensa de Everlund.",
+    "estatus": "pj"
+  },
+  "kaelvorn": {
+    "nombre": "Kael'Vorn",
+    "raza": "Tiefling",
+    "rol": "Brujo del Pacto de la Espada",
+    "faccion": "Personaje Jugador",
+    "descripcion": "Brujo WitchBlade ligado a una entidad conocida únicamente como 'Mask'. Capturado tras matar a la escolta traidora de Lord Duskryn. Fue vinculada para ayudar en la defensa de Everlund.",
+    "estatus": "pj"
+  },
+  "drolf": {
+    "nombre": "Drolf Aardark",
+    "raza": "Humano (adolescente)",
+    "rol": "Civil",
+    "faccion": "Everlund",
+    "descripcion": "Adolescente humano cuya familia fue afectada por los disturbios. Glup-Glup interrumpió su bautizo.",
+    "estatus": "neutral"
+  },
+  "duskryn": {
+    "nombre": "Lord Duskryn",
+    "raza": "Humano",
+    "rol": "Noble menor",
+    "faccion": "Puerta de Baldur",
+    "descripcion": "Noble de una casa menor que viajaba con reliquias sagradas. Fue envenenado por su propia escolta; Kael'Vorn lo escoltaba. Al despertarse y ver que le habían robado culpó a Kael'Vorn de tal hecho.",
+    "estatus": "neutral"
+  },
+  "erion": {
+    "nombre": "Erion Vhalmark",
+    "raza": "Humano",
+    "rol": "Capitán mercenario",
+    "faccion": "independiente",
+    "descripcion": "Semielfo, capitán mercenario de la compañía de las Picas Verdes. Contratado por Duskryn, desvió la caravana y robó las reliquias; fugado con el botín (gancho activo), frustrado parcialmente por Kael’Vorn.",
+    "estatus": "neutral"
+  },
+  "mask": {
+    "nombre": "Desconocido. Se le llama 'Mask'",
+    "raza": "Desconocido",
+    "rol": "Patrón de Kael'Vorn",
+    "faccion": "independiente",
+    "descripcion": "Patrón de Kael'Vorn. Entidad enigmática. Manipula a Kael para cumplir sus propios intereses, los cuales son desconocidos.",
+    "estatus": "desconocido"
+  },
+  "tempus": {
+    "nombre": "Tempuss",
+    "raza": "Dios",
+    "rol": "Señor de las batallas, el Usurpador, Martillo de Infieles",
+    "faccion": "Panteón de Faerûn",
+    "descripcion": "Dios neutral de la guerra justa y la batalla.",
+    "estatus": "desconocido"
+  },
+  "helm": {
+    "nombre": "Helm",
+    "raza": "Dios",
+    "rol": "Dios de los Guardianes, el Vigilante, el de los Ojos que no Duermen",
+    "faccion": "Panteón de Faerûn",
+    "descripcion": "Dios de los guardianes y protectores. Religión mayoritaria de las marcas de plata.",
+    "estatus": "desconocido"
+  }
+}

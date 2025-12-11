@@ -10,6 +10,14 @@ breadcrumbs:
     url: /personajes/dramatis-personae/
 ---
 
+## Faciones de la campaña
+
+- **Orden del Martillo Carmesí**: orden militante del Tempus. Facción neutral a la que Everlund solicitó ayuda para repeler la invasión orca. Ahora mismo controla todos los poderes de la ciudad de Everlund
+- **Casa Baenre**: Casa dominante de Menzoberranzan y favorita de Lolth. Autores de la guerra en las Marcas de Plata.
+- **Casa Xorlarrin**: Casa de magos, asesinos y artífices. Especialistas en magia de batalla y construcciones arcanas.
+- **Casa T'Sarran**: Antigua casa de espías, diplomáticos y fanáticos religiosos; prácticamente aniquilada en años recientes. **Velyndra descubrió esto en la tienda de mando con Haldo y Brel**.
+- **Muchas-Flechas**: Clan orco cuyo reino homónimo se estableció en el noroeste de las Marcas de Plata. Durante mucho tiempo han intentado mantener la paz y abandonar el conflicto, pero el reciente regicidio de su rey llevó el reino a la guerra.
+
 ## Fuerzas defensoras de las Marcas de Plata
 
 - **Capitán Erlen Durgaut**: Humano, de Everlund. Coordina las defensas fluviales del Rauvin. Quiso apresar a Drazkyn y Velyndra cuando estos no lograron convencerle de sus intenciones.
@@ -25,20 +33,14 @@ breadcrumbs:
 
 **Casa Baenre**
 
-Casa dominante de Menzoberranzan y favorita de Lolth. Autores de la guerra en las Marcas de Plata.
-
 - **Matrona Quenthel Baenre**: Drow, Suma Matriarca de Lolth; orquesta la guerra.
 
 **Casa Xorlarrin**
-
-Casa de magos, asesinos y artífices. Especialistas en magia de batalla y construcciones arcanas.
 
 - **Matrona Zeerith Xorlarrin**: Drow, artífice‑matriarca. Dirige a su casa en la guerra.
 - **Maestra Ravel Xorlarrin**: Drow, maestra de armas. Se encontró a Drazkyn y Velyndra durante el asedio de Everlund.
 
 **Casa T’Sarran**
-
-Antigua casa de espías, diplomáticos y fanáticos religiosos; prácticamente aniquilada en años recientes. **Velyndra descubrió esto en la tienda de mando con Haldo y Brel**.
 
 - **Matrona Irae T'Sarran**: Drow, muerta. Antigua matriarca de la casa.
 
@@ -62,6 +64,7 @@ Antigua casa de espías, diplomáticos y fanáticos religiosos; prácticamente a
 ### Kael’Vorn
 
 - **Lord Duskryn**: Noble drow de una casa menor, devoto de Mask. Kael’Vorn fue reclutado para escoltarlo en su viaje a Everlund.
+- **Capitán Erion Vhalmark** – Semielfo, capitán mercenario de la compañía de las Picas Verdes. Contratado por Duskryn, desvió la caravana y robó las reliquias; fugado con el botín (gancho activo), frustrado parcialmente por Kael’Vorn.
 
 ### Velyndra & Drazkyn
 
