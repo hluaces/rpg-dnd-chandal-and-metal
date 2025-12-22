@@ -322,6 +322,18 @@ blockquote {
   color: var(--gold-dim);
 }
 
+.hero__media {
+  margin: 0 0 1rem;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--border);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
 .muted { color: var(--muted); }
 
 .card-list {
@@ -616,8 +628,8 @@ pre code {
 .pj-tooltip {
   position: absolute;
   bottom: calc(100% + 0.75rem);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  transform: translateX(0);
 
   /* Estilo grimorio carmesí */
   background:
@@ -647,13 +659,12 @@ pre code {
   color: var(--text);
 }
 
-/* Flecha del tooltip (apunta hacia abajo) */
+/* Flecha del tooltip (apunta hacia abajo, alineada a la izquierda) */
 .pj-tooltip::after {
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1rem;
   border: 8px solid transparent;
   border-top-color: var(--accent-strong);
 }
@@ -662,12 +673,12 @@ pre code {
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1rem;
   border: 6px solid transparent;
   border-top-color: var(--paper);
   z-index: 1;
   margin-top: -1px;
+  margin-left: 2px;
 }
 
 /* Mostrar tooltip al hover */
@@ -675,7 +686,7 @@ pre code {
 .pj-wrapper:focus-within .pj-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(-4px);
+  transform: translateX(0) translateY(-4px);
 }
 
 /* Elementos internos del tooltip */
@@ -748,14 +759,478 @@ pre code {
   border-radius: 2px;
 }
 
-/* Prevenir overflow del tooltip en bordes */
-.pj-wrapper:first-child .pj-tooltip {
-  left: 0;
-  transform: translateX(0);
+/* ========================================
+   EXPEDIENTES DE PRESOS
+   ======================================== */
+
+/* Contenedor base */
+.doc-classified {
+  border: 4px double var(--accent-strong);
+  padding: 0;
+  margin: -1rem 0 2rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.02), transparent);
 }
 
-.pj-wrapper:last-child .pj-tooltip {
-  left: auto;
+/* Cabecera - Estilo Orden (rojo carmesí) */
+.doc-header {
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: var(--paper);
+  padding: 1.5rem;
+  border-bottom: 3px solid var(--gold-dim);
+  position: relative;
+}
+
+.classification-bar {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-top: 2px solid var(--gold-dim);
+  border-bottom: 2px solid var(--gold-dim);
+}
+
+.seal-rune {
+  color: var(--gold);
+  font-size: 1.2em;
+  margin: 0 0.5rem;
+}
+
+.doc-code {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.75rem 0;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Badge de amenaza (Orden) - versión estática */
+.threat-badge {
+  background: #000;
+  color: #ff3333;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border: 3px solid #ff3333;
+  box-shadow: 0 0 15px rgba(255, 51, 51, 0.5), inset 0 0 10px rgba(255, 51, 51, 0.2);
+  letter-spacing: 0.1em;
+}
+
+.threat-icon {
+  font-size: 1.2em;
+  margin: 0 0.5rem;
+}
+
+.threat-text {
+  color: #cc0000;
+  font-weight: 700;
+  font-family: "Cinzel Decorative", serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Niveles de amenaza por color */
+.threat-badge--bajo {
+  color: #4a7c4e;
+  border-color: #4a7c4e;
+  box-shadow: 0 0 10px rgba(74, 124, 78, 0.4), inset 0 0 8px rgba(74, 124, 78, 0.15);
+}
+
+.threat-badge--moderado {
+  color: #b8860b;
+  border-color: #b8860b;
+  box-shadow: 0 0 10px rgba(184, 134, 11, 0.4), inset 0 0 8px rgba(184, 134, 11, 0.15);
+}
+
+.threat-badge--alto {
+  color: #cc6600;
+  border-color: #cc6600;
+  box-shadow: 0 0 12px rgba(204, 102, 0, 0.5), inset 0 0 8px rgba(204, 102, 0, 0.2);
+}
+
+.threat-badge--critico {
+  color: #ff3333;
+  border-color: #ff3333;
+  box-shadow: 0 0 15px rgba(255, 51, 51, 0.5), inset 0 0 10px rgba(255, 51, 51, 0.2);
+}
+
+/* Metadata del documento */
+.doc-meta {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.meta-row {
+  margin: 0.4rem 0;
+  font-family: "Crimson Text", serif;
+}
+
+.meta-label {
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+/* Contenido del expediente */
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 1.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.exp-meta {
+  flex: 1;
+  min-width: 300px;
+}
+
+.exp-meta p {
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.exp-label {
+  font-weight: 700;
+  color: var(--accent-strong);
+  font-family: "Crimson Text", serif;
+}
+
+/* Texto censurado (solo para La Duquesa, definido inline) */
+
+/* Cajas de advertencia */
+.warning-box {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 3px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.warning-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  transform: translateX(0);
+  bottom: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    45deg,
+    currentColor,
+    currentColor 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.warning-arcane {
+  border-color: #6b4c9a;
+  background: linear-gradient(to bottom, rgba(107, 76, 154, 0.08), rgba(107, 76, 154, 0.03));
+}
+
+.warning-danger {
+  border-color: #cc0000;
+  background: linear-gradient(to bottom, rgba(204, 0, 0, 0.08), rgba(204, 0, 0, 0.03));
+}
+
+.warning-header {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid currentColor;
+  letter-spacing: 0.08em;
+}
+
+.warning-arcane .warning-header {
+  color: #6b4c9a;
+}
+
+.warning-danger .warning-header {
+  color: #cc0000;
+}
+
+.warning-symbol {
+  font-size: 1.3em;
+  margin: 0 0.5rem;
+}
+
+.warning-text {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Caja de recomendación / observaciones */
+.recommendation-box {
+  background: linear-gradient(to bottom, rgba(184, 144, 77, 0.1), rgba(184, 144, 77, 0.05));
+  border: 2px solid var(--gold-dim);
+  border-left: 5px solid var(--gold);
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-box p {
+  margin: 0.5rem 0;
+}
+
+.recommendation-warning {
+  color: var(--accent-strong);
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Footer del documento */
+.doc-footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04));
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 3px double var(--accent-strong);
+}
+
+.signature-block {
+  position: relative;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.signature-line {
+  margin: 0.5rem 0;
+}
+
+.signature-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.signature-name {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.signature-location {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* Sello de cera (solo Orden) */
+.wax-seal {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, var(--accent) 0%, var(--accent-strong) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(139, 26, 26, 0.5), inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.seal-symbol {
+  color: var(--gold);
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.doc-motto {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.motto-ornament {
+  color: var(--gold-dim);
+  margin: 0 0.75rem;
+}
+
+/* ----------------------------------------
+   VARIANTE: Registro Carcelario (Ciudad)
+   ---------------------------------------- */
+
+.doc-carcelario {
+  border-color: var(--gold-dim);
+}
+
+.doc-carcelario .doc-header {
+  background: linear-gradient(135deg, var(--paper-dark) 0%, var(--paper) 100%);
+  color: var(--text);
+  border-bottom: 3px solid var(--gold-dim);
+}
+
+.doc-carcelario .classification-bar {
+  color: var(--accent-strong);
+  border-color: var(--gold-dim);
+}
+
+.doc-carcelario .seal-rune {
+  color: var(--gold-dim);
+}
+
+.doc-carcelario .doc-code {
+  color: var(--accent-strong);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.doc-carcelario .doc-footer {
+  border-top-color: var(--gold-dim);
+}
+
+/* Firma simple (sin sello) para Ciudad */
+.signature-simple {
+  text-align: right;
+  padding: 1rem 0;
+}
+
+.signature-simple .signature-name {
+  font-size: 1.1rem;
+}
+
+.signature-simple .signature-title {
+  font-family: "Crimson Text", serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.doc-archive-note {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ----------------------------------------
+   EXPEDIENTES: Responsive
+   ---------------------------------------- */
+
+@media (max-width: 768px) {
+  .doc-classified {
+    margin: -0.5rem -0.5rem 1.5rem;
+    border-width: 2px;
+  }
+
+  .doc-header {
+    padding: 0.75rem;
+  }
+
+  .classification-bar {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    padding: 0.4rem;
+  }
+
+  .seal-rune {
+    display: none;
+  }
+
+  .doc-code {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .threat-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .threat-icon {
+    font-size: 1em;
+    margin: 0 0.25rem;
+  }
+
+  .doc-meta {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .exp-header {
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .exp-meta {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .exp-meta p {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .wax-seal {
+    position: static;
+    transform: none;
+    margin: 1rem auto 0;
+  }
+
+  .warning-box {
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .warning-header {
+    font-size: 0.9rem;
+  }
+
+  .recommendation-box {
+    padding: 1rem;
+  }
+
+  .doc-footer {
+    padding: 1rem;
+  }
+
+  .signature-simple {
+    text-align: center;
+  }
+
+  .signature-name {
+    font-size: 1rem;
+  }
+
+  .doc-motto {
+    font-size: 0.85rem;
+  }
+
+  .motto-ornament {
+    margin: 0 0.4rem;
+  }
 }

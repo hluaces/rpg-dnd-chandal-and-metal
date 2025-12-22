@@ -23,7 +23,7 @@ resumen: Informe de valoración y control de amenaza. Reactivada por hemalurgia;
 
   <div class="doc-meta">
     <div class="meta-row">
-      <span class="meta-label">Clasificado por:</span> Primer Inquisidor {% pj "brel" %}Brel{% endpj %} • Orden del Martillo Carmesí
+      <span class="meta-label">Clasificado por:</span> Secretario del Primado {% pj "brel" %}Brel{% endpj %} • Orden del Martillo Carmesí
     </div>
     <div class="meta-row">
       <span class="meta-label">Fecha de sellado:</span> 12 de Uktar, 1484 CdD
@@ -45,7 +45,7 @@ resumen: Informe de valoración y control de amenaza. Reactivada por hemalurgia;
       <p><span class="label">Religión:</span> Antigua devota de {% pj "tempus" %}Tempus {% endpj %}, ahora mezclada con <span class="redacted">███████</span> de <span class="redacted">██████</span></p>
       <p><span class="label">Estado actual:</span> Reactivada recientemente mediante hemalurgia</p>
       <p><span class="label">Nivel de amenaza:</span> <span class="threat-text">CRÍTICO</span> (mantener bajo contención vigilada en todo momento)</p>
-      <p><span class="label">Utilidad prevista:</span> Operativo infiltrador de última respuesta</p>
+      <p><span class="label">Utilidad prevista:</span> Operativo de infiltración y eliminación (última respuesta)</p>
     </div>
     <div class="img-frame img-frame--right" style="max-width:200px;">
       <a href="/img/duquesa_1.png" target="_blank" rel="noopener">
@@ -75,6 +75,7 @@ Debido a la naturaleza de su creación (y a su estatus como <span class="redacte
 - **Presencia hipnótica:** voz y mirada capaces de desarmar la voluntad de la mayoría de mortales, similar en efecto a un vampiro (N.d.E.: comparar con <span class="redacted">███████████</span> y ver si sus poderes tienen las mismas limitaciones).
 - **Forma <span class="redacted">███████</span>**: la criatura tiene un total control sobre <span class="redacted">██ █████ █████</span> y puede modificarla para convertirla, total o parcialmente, en <span class="redacted">███████ ██ ████████ █████ ██ ████████</span>. Hasta ahora se han catalogado <span class="redacted">███████</span>, <span class="redacted">█████████</span>, <span class="redacted">███████</span> y <span class="redacted">███████████████</span>. Adicionalmente, es capaz de moldear <span class="redacted">███████ ██ ████████████████ ████████ ████████ █████ ██ ████████</span>.
 - **Conocimiento profundo:** de inquisiciones pasadas, arcanismo, religión (especialmente ritos de {% pj "tempus" %}Tempus {% endpj %}) y métodos para lidiar con ellos. Se asume que su estatus de  <span class="redacted">███████████</span> le confirió tal conocimiento.
+- **Infiltración social:** lectura de jerarquías, etiqueta y debilidades; capacidad de obtener acceso mediante conversación dirigida. Alto riesgo de manipulación.
 - **Resiliencia sobrenatural:** difícil de destruir de forma definitiva debido a que está formada de <span class="redacted">████████████</span>. Débil a la plata, al envenenamiento y al fuego. Sospechamos que destruir <span class="redacted">████████████</span> sus <span class="redacted">██████</span> podría terminar finalmente con la entidad.
 
 <div class="warning-box warning-danger">
@@ -88,8 +89,10 @@ Debido a la naturaleza de su creación (y a su estatus como <span class="redacte
 
 ### Riesgos y control
 
-- **Hambre de carne:** se alimenta de carne, tuétano y órganos internos. Sus poderes crecen a medida que se alimenta; el vínculo impide devorar criaturas no voluntarias. Hambrunas prolongadas la marchitan y la llevan al letargo.
+- **Nota operativa:** El vínculo del sujeto antecede al programa actual de Rakrit Dul y fue redactado por el Coro de Arcanos; incluye cláusulas específicas de abstinencia y sanciones somáticas.
+- **Hambre de carne:** se alimenta de carne, tuétano y órganos internos. Sus capacidades aumentan si logra alimentarse. El vínculo del sujeto incorpora salvaguardas: si intenta alimentarse en contra del juramento, sufre náuseas, vómitos y dolor agudo. En el sujeto, cualquier pérdida de sangre es potencialmente letal; por ello, la Duquesa ha respondido correctamente al juramento y hemos logrado impedir que se alimente de forma no voluntaria. Hambrunas prolongadas la marchitan y la llevan al letargo.
 - **Riesgo esotérico:** destruirla de forma incorrecta podría <span class="redacted">████████</span> por completo al <span class="redacted">███████</span> que <span class="redacted">██████████</span> o propagarlo. Mantener restos contenidos y no experimentar sin respaldo del clero superior.
+- **Difícil de eliminar:** la destrucción definitiva es improbable sin procedimientos especializados; priorizar contención y uso dirigido.
 - **Orgullo y jerarquía:** solo coopera con mandos que percibe como "dignos". Tiende a probar los límites del vínculo.
 
 ### Recomendación final

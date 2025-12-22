@@ -49,6 +49,22 @@
     "descripcion": "Guardia raso de Everlund. Simpatiza con Glup-Glup y le devolvió sus útiles de escritura en prisión.",
     "estatus": "aliado"
   },
+  "kareth": {
+    "nombre": "Kareth Durgaut",
+    "raza": "Humano",
+    "rol": "Capitán de la Guardia",
+    "faccion": "Everlund (Defensores)",
+    "descripcion": "Capitán de la guardia de Everlund y miembro del Consejo de los Seis. Soldado exhausto que cedió el control de la ciudad a la Orden del Martillo Carmesí. Hermano de Erlen Durgaut.",
+    "estatus": "autoridad"
+  },
+  "hirian": {
+    "nombre": "Hirian Stagg",
+    "raza": "Humano",
+    "rol": "Magistrado",
+    "faccion": "Everlund",
+    "descripcion": "Magistrado de Everlund encargado de dictar sentencias. Firmó las órdenes de encarcelamiento de varios presos, incluyendo a Kael'Vorn y Glup-Glup.",
+    "estatus": "autoridad"
+  },
   "quenthel": {
     "nombre": "Quenthel Baenre",
     "raza": "Drow",
@@ -176,5 +192,85 @@
     "faccion": "Panteón de Faerûn",
     "descripcion": "Dios de los guardianes y protectores. Religión mayoritaria de las marcas de plata.",
     "estatus": "desconocido"
+  },
+  "surtur": {
+    "nombre": "Surtur",
+    "raza": "Deidad",
+    "rol": "Señor del fuego y los gigantes",
+    "faccion": "Panteón/creencias de los gigantes",
+    "descripcion": "Deidad vinculada al fuego y a jerarquías de gigantes. Su culto tiende a justificar purgas y pruebas por llamas.",
+    "estatus": "desconocido"
+  },
+  "rauvin": {
+    "nombre": "Río Rauvin",
+    "raza": "Lugar",
+    "rol": "Río principal",
+    "faccion": "Marcas Plateadas",
+    "descripcion": "Eje fluvial del norte. Rutas de suministro, puentes y pasos controlados por milicia y contrabandistas.",
+    "estatus": "neutral"
+  },
+  "costa-de-la-espada": {
+    "nombre": "Costa de la Espada",
+    "raza": "Lugar",
+    "rol": "Región",
+    "faccion": "Faerûn",
+    "descripcion": "Costa occidental con grandes ciudades y rutas mercantes. Fuente habitual de contrabando y mercenarios.",
+    "estatus": "neutral"
+  },
+  "grunido-lunar": {
+    "nombre": "Gruñido Lunar",
+    "raza": "Semi-orca",
+    "rol": "Druida lunar (cambiaformas)",
+    "faccion": "Presos de Everlund",
+    "descripcion": "Cambiaformas feral encadenada con ataduras arcanas. Habla poco, gruñe mucho y respeta la fuerza por encima de cualquier ley. Es peligrosa incluso quieta.",
+    "estatus": "neutral"
+  },
+  "capitan-tan": {
+    "nombre": "Capitán Tan",
+    "raza": "Halfling",
+    "rol": "Pirata / contrabandista",
+    "faccion": "Presos de Everlund",
+    "descripcion": "Carismático, útil como contacto y guía de rutas; riesgo alto de fuga y traición oportunista.",
+    "estatus": "neutral"
+  },
+  "korrin-mandibula": {
+    "nombre": "Korrin “Mandíbula” Baervan",
+    "raza": "Enano",
+    "rol": "Veterano (violento)",
+    "faccion": "Presos de Everlund",
+    "descripcion": "Soldado duro, respeta jerarquía, pero presenta conducta caníbal y escalada rápida.",
+    "estatus": "neutral"
+  },
+  "sor-vadria": {
+    "nombre": "Sor Vadria de Lantan",
+    "raza": "Gnoma",
+    "rol": "Artificiera / explosivos",
+    "faccion": "Presos de Everlund",
+    "descripcion": "Rápida con mecanismos y cargas; útil para sabotaje. Riesgo de improvisar herramientas y causar incidentes.",
+    "estatus": "neutral"
+  },
+  "azul": {
+    "nombre": "Azul",
+    "raza": "Troll de río",
+    "rol": "Fuerza bruta",
+    "faccion": "Presos de Everlund",
+    "descripcion": "Fuerte y regenerativo; intelecto limitado. Manipulable con agua y comida.",
+    "estatus": "neutral"
+  },
+  "xenna": {
+    "nombre": "Xenna Fuego de Ónice",
+    "raza": "Goliat (linaje ígneo)",
+    "rol": "Clériga (Luz de Surtur)",
+    "faccion": "Activos de la Orden / prisión de Everlund",
+    "descripcion": "Activo peligroso y útil; vínculo renovado por Rakrit. Peso diplomático con gigantes del fuego.",
+    "estatus": "neutral"
+  },
+  "duquesa": {
+    "nombre": "“La Duquesa”",
+    "raza": "Elfa (contención especial)",
+    "rol": "Amenaza clasificada",
+    "faccion": "Activos de la Orden / prisión de Everlund",
+    "descripcion": "Presa bajo contención y protocolos especiales. Información incompleta por censura.",
+    "estatus": "neutral"
   }
 }

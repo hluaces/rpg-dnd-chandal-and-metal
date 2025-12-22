@@ -14,13 +14,13 @@ breadcrumbs:
 
 ## Qué hicimos
 
-La sesión 0 se centró en crear a los personajes y jugar pequeñas escenas individuales para enseñar quiénes son, de dónde vienen y cómo han acabado cerca de Everlund justo cuando estalla la guerra.
+La sesión 0 fue creación de personajes y escenas de origen. Cada personaje quedó situado en el mapa y en el conflicto: qué quiere, qué debe y por qué ha terminado en Everlund en el peor momento posible.
 
 ## Kael'Vorn
 
 {% pj "kaelvorn" %}Kael'Vorn{% endpj %} aceptó, por sugerencia de su patrón {% pj "mask" %}Mask{% endpj %}, servir como guardia en la escolta de un noble, {% pj "duskryn" %}Lord Duskryn{% endpj %}, que viajaba con reliquias sagradas hacia Everlund para recuperar el honor de su casa.
 
-El capitán {% pj "erion" %}Erion Vhalmark{% endpj %} intentó apartarlo; desvió la caravana, envenenó al noble con un veneno de sueño y robó las reliquias junto a sus hombres. Kael descubrió la traición y mató a los guardias. El personal auxiliar huyó hacia Everlund para avisar. Siguiendo los planes de {% pj "mask" %}Mask{% endpj %}, Kael se dejó capturar y fue trasladado a la prisión de la Orden del Martillo Carmesí en Everlund.
+El capitán {% pj "erion" %}Erion Vhalmark{% endpj %} desvió la caravana, envenenó al noble con un veneno de sueño y robó las reliquias junto a sus hombres. Kael descubrió la traición cuando ya olía a hierro. Hubo muertos. El personal auxiliar huyó hacia Everlund para avisar. Siguiendo los planes de {% pj "mask" %}Mask{% endpj %}, Kael se dejó capturar y fue trasladado a la prisión de la Orden del Martillo Carmesí en Everlund.
 
 <p class="section-note">Esto sucedió aproximadamente tres meses antes del inicio de la crónica.</p>
 
@@ -32,7 +32,7 @@ Su celebración escandalizó a los presentes, quienes tuvieron que cancelar, boc
 
 <p class="section-note">Esto sucedió aproximadamente un mes antes del inicio de la crónica.</p>
 
-## Drazkyn y Velindra
+## Drazkyn y Velyndra
 
 {% pj "drazkyn" %}Drazkyn{% endpj %} y {% pj "velyndra" %}Velyndra{% endpj %}, drow renegados, se refugiaban en una cueva cuando una patrulla Xorlarrin activó sus trampas. La pareja se decidió a explorar y se encontró de bruces con la patrulla, liderada nada más y nada menos que por {% pj "ravel"%}Ravel Xorlarrin{% endpj %}
 
